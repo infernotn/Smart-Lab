@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Button, Container, TextField, Typography } from "@mui/material";
+import { Button, Container, TextField, Typography } from "@mui/material";
 
 const CreateUserPage = () => {
   const [name, setName] = useState("");

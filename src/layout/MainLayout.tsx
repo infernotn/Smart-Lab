@@ -1,6 +1,6 @@
 import React from "react";
 import TopNavBar from "../components/TopNavBar";
-import SideNavBar from "../components/SideNavBar";
+// import SideNavBar from "../components/SideNavBar";
 import "../styles/layout/MainLayout.scss";
 
 type Props = { children: React.ReactNode };

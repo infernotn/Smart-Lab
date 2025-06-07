@@ -1,19 +1,21 @@
-import { useMemo, useState } from "react";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { useSelector } from "react-redux";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LoginPage from "./pages/LoginPage";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { useMemo } from "react";
+// import { useTranslation } from "react-i18next";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
 import CreateUserPage from "./pages/CreateUserPage";
 import Dashboard from "./pages/Dashboard";
+import LoginPage from "./pages/LoginPage";
 import ProtectedRoute from "./routes/ProtectedRoute";
-import { useTranslation } from "react-i18next";
-import "./App.css";
 function App() {
-  const [mode, setMode] = useState<"light" | "dark">("light");
-  const theme = useMemo(() => createTheme({ palette: { mode } }), [mode]);
+  // const [mode, setMode] = useState<"light" | "dark">("light");
+  const theme = useMemo(
+    () => createTheme({ palette: { mode: "light" } }),
+    ["light"]
+  );
 
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <ThemeProvider theme={theme}>
