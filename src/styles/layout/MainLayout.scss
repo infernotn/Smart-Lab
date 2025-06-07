@@ -1,0 +1,14 @@
+@use "../abstracts/variables" as *;
+
+.main-layout {
+  display: flex;
+  width: 100%;
+  .content {
+    margin-left: 200px; // largeur side bar
+    margin-top: 60px; // hauteur top bar
+    padding: 2rem; //
+    width: calc(100% - 200px);
+    min-height: calc(100vh - 60px);
+    background-color: $background-light;
+  }
+}

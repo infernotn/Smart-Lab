@@ -1,0 +1,21 @@
+$primary: #84358b;
+$primary-light: #a85cae;
+$primary-dark: #632a6a;
+$background-light: #f4f2f7;
+$background-dark: #121212;
+$text-light: #ffffff;
+$text-dark: #000000;
+
+.login-page {
+  padding-top: 5rem;
+  text-align: center;
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}

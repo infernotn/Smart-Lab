@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as *;
+.side-nav {
+  width: 200px;
+  background-color: $accent-color;
+  height: 100vh;
+  padding-top: 60px; // espace pour la top bar
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  ul {
+    list-style: none;
+    padding: 1rem;
+
+    li {
+      margin: 1rem 0;
+
+      a {
+        color: $text-light;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem;
+        display: block;
+        border-radius: 0.5rem;
+
+        &:hover {
+          background-color: darken($accent-color, 10%);
+        }
+
+        &.active {
+          background-color: $accent-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+$primary-color: #84358b;
+$accent-color: #b07fbf;
+$background-light: #f8f6fa;
+$text-light: #ffffff;
+$text-dark: #121212;
+$bg-dark: linear-gradient(
+  -25deg,
+  $primary-color 0%,
+  $accent-color 50%,
+  $primary-color 100%
+);
